@@ -20,7 +20,8 @@ Add the `delayed-redirect` class to a link that will trigger the delayed job:
 
 The response from the server should include:
 
-```render json: { 
+```
+render json: { 
   success: true, 
   poll_url: your_own_custom_delayed_job_status_path(job), 
   redirect_url: your_own_custom_redirect_path(format: :pdf)
