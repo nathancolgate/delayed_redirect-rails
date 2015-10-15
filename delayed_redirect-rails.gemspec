@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = DelayedRedirect::Rails::VERSION
   spec.authors       = ["Nathan Colgate Clark"]
   spec.email         = ["nathancolgate@gmail.com"]
-  spec.summary       = "For redirecting to objects (normally PDFs) that require a delayed job processing before we can redirect to them"
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = "Classic Redirection"
+  spec.description   = "For redirecting to objects (normally PDFs) that require a delayed job processing before we can redirect to them"
   spec.homepage      = ""
   spec.license       = "MIT"
 
