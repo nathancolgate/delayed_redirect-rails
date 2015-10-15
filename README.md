@@ -14,7 +14,8 @@ The delayed_redirect files will be added to the asset pipeline and available for
 
 Add the `delayed-redirect` class to a link that will trigger the delayed job:
 
-```<a href="/big_report/trigger_generation" class="delayed-redirect">Generate the Big Report</a>
+```
+<a href="/big_report/trigger_generation" class="delayed-redirect">Generate the Big Report</a>
 ```
 
 The response from the server should include:
@@ -28,7 +29,8 @@ The response from the server should include:
 
 Our polling action looks like this:
 
-```def delayed_job_status
+```
+def delayed_job_status
   job = Delayed::Job.find_by_id(params[:id])
   if job
     render json: { status: 'unfinished' }
